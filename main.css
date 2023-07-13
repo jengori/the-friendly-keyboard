@@ -8,7 +8,6 @@ body {
 
 h1 {
     text-align: center;
-    padding: 1%;
 
     font-family: "Pacifico";
     font-size: 5vw;
@@ -17,15 +16,15 @@ h1 {
     background: linear-gradient(to right, #4E31AA 0%, #3795BD 100%);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
-
-
+  
+    z-index: 999;
 }
 
 .main-container {
     position: absolute;
-    top: 2%;
+/*     top: 1%; */
 
-    height: 50vw;
+    height: 60vw;
     width: 100vw;
 }
 
@@ -44,7 +43,7 @@ h1 {
 .display {
     position: relative;
 
-    min-height: 4.7%;
+    min-height: 8%;
     width: 80%;
 
     border: 2px #435B66 solid;
@@ -57,7 +56,7 @@ h1 {
     
     color: gray;
     font-family: sans-serif;
-    font-size: 1.8vw;
+    font-size: 2.5vw;
 }
 
 .keyboard {
@@ -107,10 +106,6 @@ h1 {
 
     color: white;
     font-size: 1.8vw;
-}
-
-.key:hover {
-    background-color: magenta;
 }
 
 /* properties of individual keys on keyboard and reset button*/
@@ -165,14 +160,19 @@ h1 {
 /* message shown if screen width < 700px */
 
 .narrow-screen {
-    font-family: "Pacifico";
+   
     display: none;
+  
+    padding: 1%;
+  
+    text-align: center;
+    font-family: "Pacifico";
+    font-size: 9vw;
+  
     background: #4E31AA;
     background: linear-gradient(to right, #4E31AA 0%, #3795BD 100%);
     -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    font-size: 10vw;
-    text-align: center;
+    -webkit-text-fill-color: transparent;  
 }
 
 @media (max-width: 499px) {
@@ -185,4 +185,16 @@ h1 {
         display: block;
     }
   
+  }
+
+@media (pointer: fine) {
+  .key:hover {
+    background-color: magenta;
+  }
+}
+
+@media (min-width: 1400px) {
+  .main-container {
+    height: 25vw;
+    transform: scale(0.7);
   }
