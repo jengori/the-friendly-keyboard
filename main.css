@@ -1,0 +1,188 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    background-color: black;
+}
+
+h1 {
+    text-align: center;
+    padding: 1%;
+
+    font-family: "Pacifico";
+    font-size: 5vw;
+
+    background: #4E31AA;
+    background: linear-gradient(to right, #4E31AA 0%, #3795BD 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+
+
+}
+
+.main-container {
+    position: absolute;
+    top: 2%;
+
+    height: 50vw;
+    width: 100vw;
+}
+
+.reset {
+    position: relative;
+    width: 80%;
+
+    margin: auto;
+    padding: 1%;
+
+    border-radius: 10px;
+    
+    text-align: center;
+}
+
+.display {
+    position: relative;
+
+    min-height: 4.7%;
+    width: 80%;
+
+    border: 2px #435B66 solid;
+    border-radius: 10px;
+
+    margin-bottom: 1%;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 1%;
+    
+    color: gray;
+    font-family: sans-serif;
+    font-size: 1.8vw;
+}
+
+.keyboard {
+    position: relative;
+
+    width: 80%;
+
+    margin: auto;
+    padding: 1%;
+    
+    border-radius: 10px;
+
+    background-color: #435B66;
+}
+
+/* positioning of rows of keys on keyboard */
+
+.row {
+    position: relative;
+}
+
+.row1 {
+    left: 15%;
+}
+
+.row2 {
+    left: 7%;
+}
+
+.row3 {
+    left: 22%;
+}
+
+.row4 {
+    left: 35%;
+}
+
+/* properties applied to all keys on keyboard and reset button */
+
+.key {
+    width: 5%;
+    aspect-ratio: 1/1;
+
+    margin: 0.5%;
+    
+    border-radius: 5px;
+
+    color: white;
+    font-size: 1.8vw;
+}
+
+.key:hover {
+    background-color: magenta;
+}
+
+/* properties of individual keys on keyboard and reset button*/
+
+.case {
+    width: 10%;
+    aspect-ratio: 2/1;
+}
+
+.del {
+    width: 10%;
+    aspect-ratio: 2/1;
+}
+
+.enter {
+    margin-left: 4%;
+    position: absolute;
+    width: 10%;
+    z-index: 999;
+    }
+
+.reset-button {
+    width: 30%;
+    aspect-ratio: 4/1;
+    font-size: 2vw;
+    background-color: #435B66;
+}
+
+.space {
+    width: 32%;
+    aspect-ratio: 6.5/1;
+}
+
+/* background colors of keys */
+
+.color-1 {
+    background-color: #3A1078;
+}
+
+.color-2 {
+    background-color: #4E31AA;
+}
+
+.color-3 {
+    background-color: #2F58CD;
+}
+
+.color-4 {
+    background-color: #3795BD;
+}
+
+/* message shown if screen width < 700px */
+
+.narrow-screen {
+    font-family: "Pacifico";
+    display: none;
+    background: #4E31AA;
+    background: linear-gradient(to right, #4E31AA 0%, #3795BD 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-size: 10vw;
+    text-align: center;
+}
+
+@media (max-width: 499px) {
+
+    .main-container {
+      display: none;
+    }
+
+    .narrow-screen {
+        display: block;
+    }
+  
+  }

@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+    
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Keyboard</title>
+
+    <!-- link to css file -->
+
+    <link rel="stylesheet" href="main.css">
+
+    <!-- google fonts link -->
+
+    <link rel="preconnect" href="https://fonts.googleapis.com"> 
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> 
+    <link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
+
+</head>
+
+<body>
+
+    
+
+    <div class="main-container">
+
+        <h1>The Friendly Keyboard</h1>
+
+        <!-- reset button -->
+
+        <div class = "reset">
+
+            <button class="reset-button key nonletter">click here to reset</button>
+
+        </div>
+
+        <!-- display -->
+  
+        <div class="display">Please type your name...</div>
+
+        <!-- keyboard -->
+
+        <div class="keyboard">
+
+            <!-- row 1 of keyboard -->
+
+            <div class="row row1">
+
+                <button class="q key color-1">Q</button>
+                <button class="w key color-2">W</button>
+                <button class="e key color-3">E</button>
+                <button class="r key color-4">R</button>
+                <button class="t key color-1">T</button>
+                <button class="y key color-2">Y</button>
+                <button class="u key color-3">U</button>
+                <button class="i key color-4">I</button>
+                <button class="o key color-1">O</button>
+                <button class="p key color-2">P</button>
+                <button class="del key nonletter color-4">del</button>
+                
+            </div>
+
+            <!-- row 2 of keyboard -->
+
+            <div class="row row2">
+
+                <button class="case key nonletter color-4 ">case</button>
+                <button class="a key color-1">A</button>
+                <button class="s key color-2">S</button>
+                <button class="d key color-3">D</button>
+                <button class="f key color-4">F</button>
+                <button class="g key color-1">G</button>
+                <button class="h key color-2">H</button>
+                <button class="j key color-3">J</button>
+                <button class="k key color-4">K</button>
+                <button class="l key color-1">L</button>
+                <button class="enter key nonletter color-4">enter</button>
+
+            </div> 
+
+            <!-- row 3 of keyboard -->
+            
+            <div class="row row3">
+
+                <button class="z key color-1">Z</button>
+                <button class="x key color-2">X</button>
+                <button class="c key color-3">C</button>
+                <button class="v key color-4">V</button>
+                <button class="b key color-1">B</button>
+                <button class="n key color-2">N</button>
+                <button class="m key color-3">M</button>
+    
+            </div>
+
+            <!-- row 4 of keyboard -->
+
+            <div class="row row4">
+
+                <button class="space key nonletter color-4 ">space</button>
+    
+            </div>
+
+        </div>
+
+    </div>
+
+    <!-- message shown if screen width < 700px -->
+
+    <div class="narrow-screen">
+        Sorry, the Friendly Keyboard is not available on mobile or screen widths less than 500 pixels.
+    </div>
+
+    <!-- link to JavaScript file -->
+
+    <script src="index.js"></script>
+
+</body>
+</html>
